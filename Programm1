@@ -1,0 +1,20 @@
+var
+  _firstValue,_operation,_multiplier,_secondValue: longint;
+begin
+    writeln('Введите число');
+    readln(_firstValue);
+    _secondValue := _firstValue;
+    _operation := 0;
+    _multiplier := 1;
+  while _firstvalue > 0 do 
+    begin
+        _operation := _operation * 10 + _firstvalue mod 10;
+        _firstvalue := _firstvalue div 10;
+    end;
+  while _secondValue > 0 do 
+    begin
+        _multiplier := _multiplier * (_secondValue mod 10);
+        _secondValue := _secondValue div 10
+    end;
+  writeln('Число перевертыш: ' + _operation + ' | Произведение чисел: ' + _multiplier);
+end.

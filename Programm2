@@ -1,0 +1,7 @@
+var _value:integer;
+begin
+  writeln('Введите количество лепестков: ');
+  read(_value);
+  if _value  mod 2=0 then writeln('Люит')
+  else writeln('Не любит');
+end.
